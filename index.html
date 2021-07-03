@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info text-center" style="padding:100px;background-colour:green;">
+								<center>
+									<a href = "popular_movies.html" style="font-size:100px; text-decoration:none">Popular movies</a>
+									</center>
+								<h4 class="text-wh mx-auto my-4" style="margin-top:0;" style="font-size:30px;"> <strong> Please Enter the required infromation </strong></h4>
+									<form method="POST">	<h4 class="text-wh mx-auto my-4"><strong> Please Enter the User Id</strong></h4>
+									<input type="text" name="user_id" value=""><br>
+										<h4 class="text-wh mx-auto my-4"><strong> Please Enter the Movie Name</strong></h4>
+									<input type="text" name="movie_name" value=""><br><br><br><br>
+									<div class="d-flex justify-content-center">
+										<button
+											type="submit"
+											class="btn btn-info"
+											style="color: black; font-weight: bold; width: 130px; height:50px; border-radius:12px; font-size: 21px;"
+										>
+											Predict
+										</button>
+									</div>
+								</form><br><br><br>
+
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+<!-- //banner -->
+
+
+</html>
+
+{% endblock %}

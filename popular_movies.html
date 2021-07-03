@@ -1,0 +1,71 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  .mt-0 {
+  margin-top: 50 !important;
+}
+</style>
+
+
+<div class="container py-2 mx-auto my-50 h-10 ">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+
+<div class="card card-body" style="justify-content: center;opacity: 0.9;">
+    <h1 class="text-center"><b><i>{{ "Top 10 Popular movies "
+
+
+    }} </i></b></h1> <br><br>
+
+    <table style="width:100%;border:5px solid black;font-size:30px;">
+<tr>
+<th>Movie name</th>
+<th>Genres</th>
+</tr>
+<tr>
+<td>1.Inception</td>
+<td>Action, Thriller, Science Fiction, Mystery</td>
+</tr>
+<tr>
+<td>2.The Dark Knight</td>
+<td>Drama, Action, Crime, Thriller</td>
+</tr>
+<tr>
+<td>3.Interstellar</td>
+<td>Adventure, Drama, Science Fiction</td>
+</tr>
+<tr>
+<td> 4.Fight Club</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>5.The Lord of the Rings: The Fellowship of the Ring</td>
+<td>Adventure, Fantasy, Action</td>
+</tr>
+<tr>
+<td>6.Pulp Fiction</td>
+<td>Thriller, Crime</td>
+</tr>
+<tr>
+<td>7.The Shawshank Redemption</td>
+<td>Drama, Crime</td>
+</tr>
+<tr>
+<td>8.The Lord of the Rings: The Return of the King</td>
+<td>Adventure, Fantasy, Action</td>
+</tr>
+<tr>
+<td>9.Forrest Gump</td>
+<td>Comedy, Drama, Romance</td>
+</tr>
+<tr>
+<td>10.The Lord of the Rings: The Two Towers</td>
+<td>Adventure, Fantasy, Action</td>
+</tr>
+</table>
+</div>
+  <a class="nav-link" href="{{ url_for('home') }}" style="colour:white;margin-lef:500px;height:100px;width:200px;font-size:30px;border:2px solid black;line-height:70px;background-color:#D0D0D0;">Go Back</a>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  .mt-0 {
+  margin-top: 50 !important;
+}
+</style>
+
+
+<div class="container py-2 mx-auto my-50 h-10 ">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+
+          <div class="card card-body" style="justify-content: center;opacity: 0.9;">
+              <h1 class="text-center"><b><i>{{ "Top 10 movie recommendations"
+
+
+              }} </i></b></h1> <br><br>
+              <table style="width:100%;border:5px solid black;font-size:30px;">
+  <tr>
+    <th>Movie name</th>
+
+    <th>Genres</th>
+  </tr>
+  <tr>
+    <td>{{ "1."+prediction[0][0]+""}}</td>
+
+    <td>{{prediction[2][0]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "2."+prediction[0][1]+""}}</td>
+
+      <td>{{prediction[2][1]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "3."+prediction[0][2]+""}}</td>
+
+      <td>{{prediction[2][2]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "4."+prediction[0][3]+""}}</td>
+
+      <td>{{prediction[2][3]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "5."+prediction[0][4]+""}}</td>
+
+      <td>{{prediction[2][4]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "6."+prediction[0][5]+""}}</td>
+
+      <td>{{prediction[2][5]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "7."+prediction[0][6]+""}}</td>
+
+      <td>{{prediction[2][6]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "8."+prediction[0][7]+""}}</td>
+
+      <td>{{prediction[2][7]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "9."+prediction[0][8]+""}}</td>
+
+      <td>{{prediction[2][8]}}</td>
+  </tr>
+  <tr>
+    <td>{{ "10."+prediction[0][9]+""}}</td>
+
+      <td>{{prediction[2][9]}}</td>
+  </tr>
+</table>
+          </div><br><br><br>
+            <a class="nav-link" href="{{ url_for('home') }}" style="colour:white;margin-lef:500px;height:100px;width:200px;font-size:30px;border:2px solid black;line-height:70px;background-color:#D0D0D0;">Go Back</a>
+      </div>
+  </div>
+</div>
+{% endblock %}
